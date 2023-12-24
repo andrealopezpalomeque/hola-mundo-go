@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"rsc.io/quote"
 )
 
 //! Declaracion de CONSTANTES ------------------------------------------------------------------------
@@ -26,7 +28,7 @@ const (
 
 func main() {
 	//fmt.Println("Hola Mundo")
-	//fmt.Println(quote.Go())
+	fmt.Println("quote:",quote.Go())
 	// ! DECLARACION DE VARIABLES ------------------------------------------------------------------------
 
 	//? Declaracion de variables -> se pueden declarar fuera de la funcion main 
