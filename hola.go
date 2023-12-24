@@ -4,11 +4,32 @@ import (
 	"fmt"
 )
 
+//! Declaracion de CONSTANTES ------------------------------------------------------------------------
+const Pi float32 = 3.14 // hay que declarar e inicializar la constante, despues no se puede cambiar su valor
+
+const (
+	x = 100
+	y = 0b1010 // binario
+	z = 0o12 // octal
+	w = 0xFF // hexadecimal
+)
+
+const (
+	Domingo = iota + 1 // iota -> genera una secuencia de numeros, inicia en 0
+	Lunes
+	Martes
+	Miercoles
+	Jueves
+	Viernes
+	Sabado
+)
+
 func main() {
 	//fmt.Println("Hola Mundo")
 	//fmt.Println(quote.Go())
+	// ! DECLARACION DE VARIABLES ------------------------------------------------------------------------
 
-	//? Declaracion de variables -> se pueden declarar fuera de la funcion main
+	//? Declaracion de variables -> se pueden declarar fuera de la funcion main 
 
 	//var name string = "Juan" //esta variable almacena cadena de caracteres
 	
@@ -44,5 +65,8 @@ func main() {
 
 	fmt.Println(comida)
 	
-
+	//! Declaracion de CONSTANTES ------------------------------------------------------------------------
+	fmt.Println(Pi, x, y, z, w)
+	fmt.Println(Domingo, Lunes, Martes, Miercoles, Jueves, Viernes, Sabado)
+		
 }
